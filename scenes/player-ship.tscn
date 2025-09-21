@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0ge5hxifh04u"]
+
+[ext_resource type="SpriteFrames" uid="uid://ukhjc11n5nt4" path="res://resources/player-ship-animation.tres" id="1_5huip"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1hasn"]
+radius = 14.0
+height = 54.0
+
+[node name="player-ship" type="CharacterBody2D"]
+
+[node name="collision-shape" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_1hasn")
+
+[node name="sprite-animation" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_5huip")

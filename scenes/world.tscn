@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcead3mrpxk6j"]
+
+[ext_resource type="Script" uid="uid://b58u0pynsmlxc" path="res://scenes/world.gd" id="1_4wyf3"]
+[ext_resource type="Texture2D" uid="uid://d0il18qji7sus" path="res://assets/Purple Nebula 5 - 1024x1024.png" id="2_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://bvvleoskb4sei" path="res://scenes/camera.tscn" id="3_4wyf3"]
+
+[node name="world" type="Node2D"]
+script = ExtResource("1_4wyf3")
+
+[node name="background" type="Node2D" parent="."]
+
+[node name="parallax-background" type="ParallaxBackground" parent="."]
+
+[node name="parallax-layer" type="ParallaxLayer" parent="parallax-background"]
+motion_mirroring = Vector2(0, 1024)
+
+[node name="background" type="Sprite2D" parent="parallax-background/parallax-layer"]
+texture = ExtResource("2_4wyf3")
+
+[node name="background2" type="Sprite2D" parent="parallax-background/parallax-layer"]
+position = Vector2(0, 2048)
+texture = ExtResource("2_4wyf3")
+
+[node name="camera" parent="." groups=["world_objects"] instance=ExtResource("3_4wyf3")]
