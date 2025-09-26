@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0il18qji7sus"
-path="res://.godot/imported/Purple Nebula 5 - 1024x1024.png-0a0aecd6d1aca60701fe5c8687ebdf36.ctex"
+uid="uid://bxbq56jn7jk6i"
+path="res://.godot/imported/pulse4.png-e67cee3221ea2d3d99e6763a7d903f39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Purple Nebula 5 - 1024x1024.png"
-dest_files=["res://.godot/imported/Purple Nebula 5 - 1024x1024.png-0a0aecd6d1aca60701fe5c8687ebdf36.ctex"]
+source_file="res://assets/sprites/Pulse/frames/pulse4.png"
+dest_files=["res://.godot/imported/pulse4.png-e67cee3221ea2d3d99e6763a7d903f39.ctex"]
 
 [params]
 

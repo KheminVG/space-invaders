@@ -3,7 +3,7 @@ extends Camera2D
 const SPEED : int = 100
 const scroll_direction : Vector2 = Vector2(0, -1)
 
-const reset_threshold : float = 1000000.0
+const reset_threshold : float = 100000.0
 
 func _process(delta: float) -> void:
 	var velocity : Vector2 = self.scroll_direction * self.SPEED

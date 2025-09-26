@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ikx2sw1xey8d"
-path="res://.godot/imported/Purple Nebula 1 - 1024x1024.png-268065d9b22f4edb48de7e240f8331cb.ctex"
+uid="uid://jkefw3xav3id"
+path="res://.godot/imported/waveform2.png-03b673f23641bcb617dd111c4381d716.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Purple Nebula 1 - 1024x1024.png"
-dest_files=["res://.godot/imported/Purple Nebula 1 - 1024x1024.png-268065d9b22f4edb48de7e240f8331cb.ctex"]
+source_file="res://assets/sprites/waveform/frames/waveform2.png"
+dest_files=["res://.godot/imported/waveform2.png-03b673f23641bcb617dd111c4381d716.ctex"]
 
 [params]
 
