@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://rcws58dy5lc1"]
+
+[ext_resource type="Texture2D" uid="uid://ffaaua7il5yw" path="res://assets/sprites/projectile-placeholder.png" id="1_c8fcr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6aapk"]
+radius = 5.0
+height = 32.0
+
+[node name="projectile" type="RigidBody2D"]
+collision_layer = 8
+collision_mask = 4
+gravity_scale = 0.0
+
+[node name="collision-shape" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_6aapk")
+
+[node name="sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.833333, 0.760417)
+texture = ExtResource("1_c8fcr")

@@ -1,21 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://b76c8hrx03d3n"]
 
-[sub_resource type="GDScript" id="GDScript_43siq"]
-script/source = "extends Area2D
-
-@export var direction : Vector2 = Vector2(1, 0)
-@export var distance : int = 980
-
-func _on_body_entered(body: Node2D) -> void:
-	body.position += self.direction.normalized() * self.distance
-"
+[ext_resource type="Script" uid="uid://b0w6x4cw80p8u" path="res://scenes/side_trigger.gd" id="1_ahuwp"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_4wyf3"]
 b = Vector2(0, 960)
 
 [node name="side-trigger" type="Area2D"]
 collision_mask = 2
-script = SubResource("GDScript_43siq")
+script = ExtResource("1_ahuwp")
 
 [node name="collision-shape" type="CollisionShape2D" parent="."]
 shape = SubResource("SegmentShape2D_4wyf3")

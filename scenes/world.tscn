@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bcead3mrpxk6j"]
+[gd_scene load_steps=7 format=3 uid="uid://bcead3mrpxk6j"]
 
 [ext_resource type="Script" uid="uid://dbhprb8we2em1" path="res://scenes/parallax_background.gd" id="1_4wyf3"]
 [ext_resource type="Texture2D" uid="uid://d0il18qji7sus" path="res://assets/background/Purple Nebula 5 - 1024x1024.png" id="2_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://b76c8hrx03d3n" path="res://scenes/side_trigger.tscn" id="4_71j4m"]
-[ext_resource type="PackedScene" uid="uid://d0ge5hxifh04u" path="res://scenes/player-ship.tscn" id="4_k0juu"]
+[ext_resource type="PackedScene" uid="uid://d0ge5hxifh04u" path="res://scenes/player_ship.tscn" id="4_k0juu"]
+[ext_resource type="PackedScene" uid="uid://cojrjymo3rsfm" path="res://scenes/the_great_absorber.tscn" id="5_71j4m"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_4wyf3"]
 
@@ -11,6 +12,7 @@
 
 [node name="parallax-background" type="ParallaxBackground" parent="."]
 script = ExtResource("1_4wyf3")
+scrolling_speed = 100
 
 [node name="parallax-layer" type="ParallaxLayer" parent="parallax-background"]
 motion_mirroring = Vector2(0, 1024)
@@ -38,3 +40,5 @@ distance = 975
 position = Vector2(992, 0)
 direction = Vector2(-1, 0)
 distance = 975
+
+[node name="the-great-absorber" parent="." instance=ExtResource("5_71j4m")]

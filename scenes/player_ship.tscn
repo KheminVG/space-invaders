@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0ge5hxifh04u"]
+[gd_scene load_steps=5 format=3 uid="uid://d0ge5hxifh04u"]
 
 [ext_resource type="Script" uid="uid://dc46rpf0f0txq" path="res://scenes/player_ship.gd" id="1_1hasn"]
 [ext_resource type="Texture2D" uid="uid://0idhj4tc1rek" path="res://assets/sprites/space-ship-placeholder.png" id="1_5huip"]
+[ext_resource type="PackedScene" uid="uid://8hbex8ar2bwj" path="res://scenes/player_turret.tscn" id="2_7t0u0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5huip"]
 radius = 16.0
@@ -12,6 +13,8 @@ script = ExtResource("1_1hasn")
 
 [node name="collision-shape" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_5huip")
+
+[node name="player-turret" parent="." instance=ExtResource("2_7t0u0")]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -3)
